@@ -122,7 +122,7 @@ pf = pd.DataFrame([
 ])
 
 dig = px.timeline(pf, x_start="Start", x_end="Finish", y="Resource", color="Start",
-hover_name = "Task",  width=700,
+hover_name = "Task", 
                   color_discrete_sequence=px.colors.diverging.Fall
                   , opacity=.7
                   , title="<b>Interactive Resume: Academic History</b>"
@@ -197,4 +197,4 @@ dig.add_annotation(ax=0, ay=-75,
            arrowwidth=1
 
                    )
-st.plotly_chart(dig)
+st.plotly_chart(dig, use_container_width=True)
