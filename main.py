@@ -4,6 +4,15 @@ import pandas as pd
 from datetime import datetime
 
 st.set_page_config(layout="centered")
+
+hide_streamlit_style = """
+<style>
+.css-hi6a2p {padding-top: 0rem;}
+</style>
+
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 pt = datetime.today().strftime('%Y-%m-%d')
 
 df = pd.DataFrame([
