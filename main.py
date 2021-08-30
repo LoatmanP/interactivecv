@@ -104,7 +104,7 @@ pf = pd.DataFrame([
 ])
 
 dig = px.timeline(pf, x_start="Start", x_end="Finish", y="Resource", color="Start",
-hover_name = "Task",  width=900,
+hover_name = "Task",  width=700,
                   color_discrete_sequence=px.colors.diverging.Fall
                   , opacity=.7
                   , title="<b>Interactive Resume: Academic History</b>"
