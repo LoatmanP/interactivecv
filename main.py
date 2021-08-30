@@ -16,7 +16,7 @@ df = pd.DataFrame([
 ])
 
 fig = px.timeline(df, x_start="Start", x_end="Finish", y="Resource", color="Start",
-hover_name = "Task",  width=900,
+hover_name = "Task",  width=600,
                   color_discrete_sequence=px.colors.diverging.delta
                   , opacity=.7
                   , title="<b>Interactive Resume: Work History</b>"
