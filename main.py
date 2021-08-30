@@ -34,7 +34,7 @@ df = pd.DataFrame([
 ])
 
 fig = px.timeline(df, x_start="Start", x_end="Finish", y="Resource", color="Start",
-hover_name = "Task",  width=700,
+hover_name = "Task",  
                   color_discrete_sequence=px.colors.diverging.delta
                   , opacity=.7
                   , title="<b>Interactive Resume: Work History</b>"
@@ -110,7 +110,7 @@ fig.add_annotation(ax=0, ay=-75,
            arrowwidth=1
 
                    )
-st.plotly_chart(fig)
+st.plotly_chart(fig, user_container_width = True)
 
 pf = pd.DataFrame([
     dict(Task="Rowan University", Start='2007-09-01', Finish='2011-05-15', Resource=1),
