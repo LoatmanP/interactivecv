@@ -101,12 +101,7 @@ fig.add_annotation(ax=0, ay=-150,
 
                    )
 
-fig.add_annotation(ax=0, ay=-75,
-                   x = pd.Timestamp('2016-12-01') + (pd.Timestamp('2017-01-31') - pd.Timestamp('2016-12-01'))/2, y = 1.4,
-            text="UX/Data Analyst Intern",
-            arrowhead=6,
-           arrowsize=2,
-           arrowwidth=1
+
 
                    )
 st.plotly_chart(fig, user_container_width = True)
