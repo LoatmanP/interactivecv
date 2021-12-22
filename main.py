@@ -196,5 +196,5 @@ dig.add_annotation(ax=0, ay=-75,
            arrowsize=2,
            arrowwidth=1
 
-                   )
+                   ) 
 st.plotly_chart(dig, use_container_width=True)
