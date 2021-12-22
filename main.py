@@ -25,7 +25,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 pt = datetime.today().strftime('%Y-%m-%d')
 
 df = pd.DataFrame([
-     dict(Task="Curriculum Associates=", Start='2017-12-01', Finish='2018-01-31', Resource=1)
+    dict(Task="Curriculum Associates=", Start='2017-12-01', Finish='2018-01-31', Resource=1),
     dict(Task="athenahealth", Start='2018-02-14', Finish='2019-10-14', Resource=1),
     dict(Task="Lincoln Financial Group", Start='2019-10-15', Finish='2021-06-29', Resource=1),
     dict(Task="Lincoln Financial Group", Start='2021-06-29', Finish=pt, Resource=1)
