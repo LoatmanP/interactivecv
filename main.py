@@ -52,7 +52,7 @@ fig.update_layout(
         ,paper_bgcolor="#FFFFFF"
         ,yaxis_range=['2006-02-28','2020-04-15']
         ,plot_bgcolor = "#FFFFFF"
-       , xaxis_range=[df.Start.min(), df.Finish.max()]
+       , xaxis_range=['01-01-2018', df.Finish.max()]
         ,xaxis = dict(
         showgrid=False
         ,rangeslider_visible=False
